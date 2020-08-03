@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+    <meta charset="EUC-JP">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>【mizunohana】水まわり、自由に、咲かそ。｜楽天市場店</title>
+
+    <link href="css/custom-style.css" rel="stylesheet">
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--ドロワーメニュー-->
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="css/drawer.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".drawer").drawer();
+        });
+    </script>
+    <!--ドロワーメニュー-->
+
+    <script>
+    $(function() {
+        var isDisplay = false;
+        var TopBtn= $('#PageTopBtn');    
+        TopBtn.css('right', '-200px');
+        var isDisplay = false;
+        //スクロール位置が100でボタンを表示
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                if (isDisplay == false) {
+                    isDisplay = true;
+                    TopBtn.stop().animate({'right' : '10px'}, 200);
+                }
+            } 
+            else {
+                if (isDisplay) {
+                    isDisplay = false;
+                    TopBtn.stop().animate({'right' : '-200px'}, 200); 
+                }
+            }
+        });
+        //ボタンを押下するとトップへ移動
+        TopBtn.click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
+    </script>
+
+    <!--スムーズスクロール-->
+    <script>
+    $(function(){
+        $('a[href^="#"]').click(function(){
+        var speed = 1000;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+    });
+    </script>
+    <!--スムーズスクロール-->
+
+    <!--画像フェードイン-->
+    <script>
+    $(function(){
+        $(window).scroll(function (){
+            $('.fadein').each(function(){
+                var elemPos = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > elemPos - windowHeight + 200){
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
+    });
+    </script>
+    <!--画像フェードイン-->
+</head>
+
+<body class="drawer drawer--right">
+
+<!--トップに戻るボタン-->
+<p id="PageTopBtn"><a href="#most-top" style="color: #fff !important;">▲</a></p>
+<div style="height: 0;" id="most-top"></div>
+
+<!--PCヘッダー-->
+<div class="container-fluid when-pc">
+    <div class="row">
+        <div class="col-12 text-center" style="padding-top: 10px;padding-bottom: 5px;">
+            <a href="/"><img src="img/logo.png" style="width: 256px;"></a>
+        </div>
+    </div>
+</div>
+<!--PCヘッダー-->
+
+<!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+<header class="drawer-navbar when-sp" role="banner">
+<div class="drawer-container">
+<div class="drawer-navbar-header" style="position: fixed;top: 0;left: 0;">
+    <a class="drawer-brand" href="/"><img src="img/logo.png" style="width: 210px;padding-top:10px;"></a>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+    <span class="sr-only">toggle navigation</span>
+    <span class="drawer-hamburger-icon"></span>
+    </button>
+</div>
+<nav class="drawer-nav" role="navigation" style="padding-left: 5px;padding-right: 5px;">
+
+    <ul class="drawer-menu drawer-menu--left" style="height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;">
+    <li>
+        <div class="sidenavig-sp"><!--SPメニュー-->
+            <div class="search--section">
+                <form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" accept-charset='EUC-JP'>
+                <input value="6" type="hidden" name="sv">
+                <input value="" type="hidden" name="sid"><!--店舗ID-->
+                <input value="" type="hidden" name="su"><!--店舗URL-->
+                <input value="" type="hidden" name="sn"><!--店舗名-->
+                <input value="A" type="hidden" name="f">
+                <input type="text" name="sitem" class="text form-control" placeholder="" style="width: 100%;border-radius: 0;border: 1px solid #888;"><!--検索キーワード-->
+                <input value="" type="submit" class="btn-search"><!--検索ボタン-->
+                </form>
+        
+                <ul class="mizu--tag">
+                    <li><a href="#">#洗面ボウル</a></li>
+                    <li><a href="#">#手洗</a></li>
+                    <li><a href="#">#ミラー</a></li>
+                    <li><a href="#">#LED</a></li>
+                    <li><a href="#">#ボウル</a></li>
+                </ul>
+            </div>
+        
+            <h3 class="sidenav--ttls">商品カテゴリー</h3>
+            <h4 class="sidenavi--itemcat"><a href="#">洗面ボウル</a></h4>
+            <ul class="sidenavi--itemlists">
+                <li><a href="#">マット</a></li>
+                <li><a href="#">ホワイト</a></li>
+                <li><a href="#">カラフル</a></li>
+                <li><a href="#">エレガントホワイト</a></li>
+                <li><a href="#">エレガントカラー</a></li>
+                <li><a href="#">グラデーション</a></li>
+                <li><a href="#">ストーン</a></li>
+                <li><a href="#">フラワー</a></li>
+                <li><a href="#">メタリック</a></li>
+                <li><a href="#">和</a></li>
+                <li><a href="#">壁掛け</a></li>
+                <li><a href="#">クリアガラス</a></li>
+                <li><a href="#">カラーガラス</a></li>
+                <li><a href="#">グラデーションガラス</a></li>
+                <li><a href="#">メタリックガラス</a></li>
+                <li><a href="#">プレミアムシリーズ</a></li>
+            </ul>
+        
+            <h4 class="sidenavi--itemcat"><a href="#">手洗いボウル</a></h4>
+            <ul class="sidenavi--itemlists">
+                <li><a href="#">陶磁器</a></li>
+                <li><a href="#">ガラス</a></li>
+            </ul>
+        
+            <h4 class="sidenavi--itemcat"><a href="#">水栓金具</a></h4>
+            <ul class="sidenavi--itemlists">
+                <li><a href="#">蛇口</a></li>
+                <li><a href="#">排水金具</a></li>
+                <li><a href="#">排水トラップ</a></li>
+            </ul>
+        
+            <h4 class="sidenavi--itemcat"><a href="#">LEDミラー</a></h4>
+        
+            <h4 class="sidenavi--itemcat"><a href="#">ミラー</a></h4>
+        
+        
+            <h3 class="sidenav--ttls">色から選ぶ</h3>
+            <h4 class="sidenavi--itemcat"><a href="#">ホワイト</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">黒</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">赤</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">青</a></h4>
+        
+        
+            <h3 class="sidenav--ttls">材質から選ぶ</h3>
+            <h4 class="sidenavi--itemcat"><a href="#">磁器</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">ガラス</a></h4>
+        
+        
+            <h3 class="sidenav--ttls">価格から選ぶ</h3>
+            <h4 class="sidenavi--itemcat"><a href="#">50,000円から</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">25,000円から49,999円</a></h4>
+            <h4 class="sidenavi--itemcat"><a href="#">25,000円まで</a></h4>
+        
+        
+            <p class="text-center" style="margin-top: 15px;"><a href="#"><img src="img/side_banner_001.png" style="width: 70%;"></a></p>
+            <p class="text-center" style="margin-top: 15px;"><a href="#"><img src="img/side_banner_002.png" style="width: 70%;"></a></p>
+        </div><!--SPメニュー-->
+    </li>
+    </ul>
+
+</nav>
+</div>
+</header>
+<!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+
+<!--スライドバナー-->
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 head-slide-wrap" style="padding-right: 0;padding-left: 0;">
+    <!-- Slider main container -->
+    <div class="swiper-container main-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a target="_top" href="#"><img src="img/slide01.png" style="width: 100%;"></a></div>
+            <div class="swiper-slide"><a target="_top" href="#"><img src="img/slide02.png" style="width: 100%;"></a></div>
+            <div class="swiper-slide"><a target="_top" href="#"><img src="img/slide03.png" style="width: 100%;"></a></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-custom-button"><i class="fa fa-angle-left"></i></div>
+        <div class="swiper-button-next swiper-custom-button"><i class="fa fa-angle-right"></i></div>
+    </div>
+
+<script>
+var mySwiper = new Swiper ('.main-swiper', {
+    loop: true,
+    speed: 1000,
+    autoplay: 3000,
+    centeredSlides : true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+    767: {
+        slidesPerView: 1,
+        spaceBetween: 0
+    }
+    }
+})
+</script>
+
+    </div>
+</div>
+</div>
+<!--スライドバナー-->
+
+
+<div class="container when-pc">
+<div class="row">
+    <div class="col-12 head-global-navi text-center">
+        <div class="flex--item"><a href="#">HOME</a></div>
+        <div class="flex--item"><a href="#">ご利用ガイド</a></div>
+        <div class="flex--item"><a href="#">会社概要</a></div>
+        <div class="flex--item"><a href="#">お支払い･送料･返品</a></div>
+        <div class="flex--item"><a href="#">楽天市場</a></div>
+    </div>
+</div>
+</div>
+
+<div class="container when-pc">
+<div class="row">
+    <div class="col-12 head-global-navi text-center">
+        <div class="flex--item02">
+            <a href="#">
+                <img src="img/senmen-bowl.png" style="width: 60%;" class="fadein"><br>
+                洗面ボウル
+            </a>
+        </div>
+
+        <div class="flex--item02">
+            <a href="#">
+                <img src="img/tearai-bowl.png" style="width: 60%;" class="fadein"><br>
+                手洗いボウル
+            </a>
+        </div>
+
+        <div class="flex--item02">
+            <a href="#">
+                <img src="img/suisen-kanagu.png" style="width: 60%;" class="fadein"><br>
+                水栓金具
+            </a>
+        </div>
+
+        <div class="flex--item02">
+            <a href="#">
+                <img src="img/led-mirror.png" style="width: 60%;" class="fadein"><br>
+                LEDミラー
+            </a>
+        </div>
+
+        <div class="flex--item02">
+            <a href="#">
+                <img src="img/mirror.png" style="width: 60%;" class="fadein"><br>
+                ミラー
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container"><!--wrapper-->
+<div class="row"><!--wrapper-->
+<div class="col-xl-2 col-lg-2 col-md-2 col-sm-0 col-0 sidenavig when-pc"><!--サイドナビ-->
+    <div class="search--section">
+        <form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" accept-charset='EUC-JP'>
+        <input value="6" type="hidden" name="sv">
+        <input value="" type="hidden" name="sid"><!--店舗ID-->
+        <input value="" type="hidden" name="su"><!--店舗URL-->
+        <input value="" type="hidden" name="sn"><!--店舗名-->
+        <input value="A" type="hidden" name="f">
+        <input type="text" name="sitem" class="text form-control" placeholder="" style="width: 100%;border-radius: 0;border: 1px solid #888;"><!--検索キーワード-->
+        <input value="" type="submit" class="btn-search"><!--検索ボタン-->
+        </form>
+
+        <ul class="mizu--tag">
+            <li><a href="#">#洗面ボウル</a></li>
+            <li><a href="#">#手洗</a></li>
+            <li><a href="#">#ミラー</a></li>
+            <li><a href="#">#LED</a></li>
+            <li><a href="#">#ボウル</a></li>
+        </ul>
+    </div>
+
+    <h3 class="sidenav--ttls fadein">商品カテゴリー</h3>
+    <h4 class="sidenavi--itemcat"><a href="#">洗面ボウル</a></h4>
+    <ul class="sidenavi--itemlists">
+        <li><a href="#">マット</a></li>
+        <li><a href="#">ホワイト</a></li>
+        <li><a href="#">カラフル</a></li>
+        <li><a href="#">エレガントホワイト</a></li>
+        <li><a href="#">エレガントカラー</a></li>
+        <li><a href="#">グラデーション</a></li>
+        <li><a href="#">ストーン</a></li>
+        <li><a href="#">フラワー</a></li>
+        <li><a href="#">メタリック</a></li>
+        <li><a href="#">和</a></li>
+        <li><a href="#">壁掛け</a></li>
+        <li><a href="#">クリアガラス</a></li>
+        <li><a href="#">カラーガラス</a></li>
+        <li><a href="#">グラデーションガラス</a></li>
+        <li><a href="#">メタリックガラス</a></li>
+        <li><a href="#">プレミアムシリーズ</a></li>
+    </ul>
+
+    <h4 class="sidenavi--itemcat"><a href="#">手洗いボウル</a></h4>
+    <ul class="sidenavi--itemlists">
+        <li><a href="#">陶磁器</a></li>
+        <li><a href="#">ガラス</a></li>
+    </ul>
+
+    <h4 class="sidenavi--itemcat"><a href="#">水栓金具</a></h4>
+    <ul class="sidenavi--itemlists">
+        <li><a href="#">蛇口</a></li>
+        <li><a href="#">排水金具</a></li>
+        <li><a href="#">排水トラップ</a></li>
+    </ul>
+
+    <h4 class="sidenavi--itemcat"><a href="#">LEDミラー</a></h4>
+
+    <h4 class="sidenavi--itemcat"><a href="#">ミラー</a></h4>
+
+
+    <h3 class="sidenav--ttls fadein">色から選ぶ</h3>
+    <h4 class="sidenavi--itemcat"><a href="#">ホワイト</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">黒</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">赤</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">青</a></h4>
+
+
+    <h3 class="sidenav--ttls fadein">材質から選ぶ</h3>
+    <h4 class="sidenavi--itemcat"><a href="#">磁器</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">ガラス</a></h4>
+
+
+    <h3 class="sidenav--ttls fadein">価格から選ぶ</h3>
+    <h4 class="sidenavi--itemcat"><a href="#">50,000円から</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">25,000円から49,999円</a></h4>
+    <h4 class="sidenavi--itemcat"><a href="#">25,000円まで</a></h4>
+
+
+    <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_001.png" style="width: 100%;" class="fadein"></a></p>
+    <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_002.png" style="width: 100%;" class="fadein"></a></p>
+</div><!--サイドナビ-->
+
+
+
+
+
+<div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12"><!--メインカラム-->
+
+<div class="container" style="margin-top: 0;"><!--inner-->
+<div class="row">
+    <div class="col-12">
+    <h3 class="main--ttls fadein">インフォメーション</h3>
+    <p><span style="display: inline-block;padding-right: 30px;margin-bottom: 15px;">2020.07.01</span>緊急事態宣言に伴う発送について</p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru fadein"></a>
+        <h4 class="main--catnav">清潔感がある<br class="when-pc">洗面ボウル　ホワイト特集！</h4>
+        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru fadein"></a>
+        <h4 class="main--catnav">イタリアの洗練されたデザイン<br class="when-pc">ガラスボウル　特集</h4>
+        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru fadein"></a>
+        <h4 class="main--catnav">玄関入ったらまず手洗い<br class="when-pc">おかえり洗面</h4>
+        <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+
+    <!--NEW ITEM-->
+    <div class="col-12">
+    <h3 class="main--ttls fadein" style="margin-top: 50px;">NEW ITEM</h3>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-12 text-center" style="margin: 40px auto;">
+        <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+    </div>
+    <!--NEW ITEM-->
+
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+
+    <!--おすすめ商品-->
+    <div class="col-12">
+    <h3 class="main--ttls fadein" style="margin-top: 50px;">おすすめ商品</h3>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="col-12 text-center" style="margin: 40px auto;">
+        <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+    </div>
+    <!--おすすめ商品-->
+
+
+    <!--おすすめ商品-->
+    <div class="col-12">
+    <h3 class="main--ttls fadein" style="margin-top: 50px;">ランキング</h3>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+    <div class="rank--flexbox text-center">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain" style="font-size: 14px;">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="rank--flexbox text-center">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain" style="font-size: 14px;">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="rank--flexbox text-center when-pc">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain" style="font-size: 14px;">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="rank--flexbox text-center when-pc">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain" style="font-size: 14px;">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+
+    <div class="rank--flexbox text-center when-pc">
+        <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+        <p class="product--name-inmain" style="font-size: 14px;">
+            グラデーションガラス<br>
+            26,400円（税込）
+        </p>
+    </div>
+    </div>
+
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+        <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+    </div>
+
+
+<!-- 手洗いボウル-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_001.png">
+        <img class="sp" src="img/item_banner_001_sp.png">
+        <div>
+        <h3 class="fadein">
+        <span>手洗いボウル</span>
+        HAND WASH BASIN
+    </h3>
+    <p class="fadein">空間デザインを邪魔しないコンパクト設計。<br>トイレ内や玄関、階段踊り場などのセカンド洗面にちょうどいいサイズ感です。</p>
+    </div>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12 text-center" style="margin: 40px auto;">
+            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+        </div>
+<!-- 手洗いボウル-->
+
+
+<!-- 洗面ボウル-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_002.png">
+        <img class="sp" src="img/item_banner_002_sp.png">
+        <div>
+    <h3 class="fadein">
+    <span>洗面ボウル</span> 
+    WASH BASIN
+    </h3>
+    <p class="fadein">ベーシックなデザインから個性的な柄や形の洗面ボウルを多数取り揃えています。<br>さまざまな商業施設や店舗にマッチする洗面ボウルをお選びください。</p>
+    </div>
+    </div>
+
+        <div class="col-12" style="display: flex;justify-content: space-around;">
+            <div class="rank--flexbox text-center">
+                <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+                <p class="product--name-inmain" style="font-size: 14px;">
+                    グラデーションガラス<br>
+                    26,400円（税込）
+                </p>
+            </div>
+        
+            <div class="rank--flexbox text-center">
+                <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+                <p class="product--name-inmain" style="font-size: 14px;">
+                    グラデーションガラス<br>
+                    26,400円（税込）
+                </p>
+            </div>
+        
+            <div class="rank--flexbox text-center when-pc">
+                <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+                <p class="product--name-inmain" style="font-size: 14px;">
+                    グラデーションガラス<br>
+                    26,400円（税込）
+                </p>
+            </div>
+        
+            <div class="rank--flexbox text-center when-pc">
+                <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+                <p class="product--name-inmain" style="font-size: 14px;">
+                    グラデーションガラス<br>
+                    26,400円（税込）
+                </p>
+            </div>
+        
+            <div class="rank--flexbox text-center when-pc">
+                <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+                <p class="product--name-inmain" style="font-size: 14px;">
+                    グラデーションガラス<br>
+                    26,400円（税込）
+                </p>
+            </div>
+            </div>
+    
+            <div class="col-12 text-center" style="margin: 40px auto;">
+                <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+            </div>
+<!-- 洗面ボウル-->
+
+<!-- ミラー-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_003.png">
+        <img class="sp" src="img/item_banner_003_sp.png">
+        <div>
+    <h3 class="fadein">
+        <span>ミラー</span>
+    Mirror
+    </h3>
+    <p class="fadein">華やかで明るい空間を演出するこだわりのミラー。<br>省電力なLEDミラーがお顔を明るく照らします。</p>
+    </div>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12 text-center" style="margin: 40px auto;">
+            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+        </div>
+<!-- ミラー-->
+
+<!-- 水栓金具ー-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_004.png" />
+        <img class="sp" src="img/item_banner_004_sp.png">
+        <div>
+    <h3 class="fadein">
+    <span>水栓金具</span>
+    FAUCET
+    </h3>
+    <p class="fadein">「mizunohana」の洗面ボウルにフィットする水栓金具。<br>日本の規格に対応しているので安心。<br>洗面ボウルのデザインと相性のいい組み合わせが、水まわりをさらに引き立てます。</p>
+    </div>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12 text-center" style="margin: 40px auto;">
+            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+        </div>
+<!-- 水栓金具ー-->
+
+<!-- 排水金具-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_005.png" />
+        <img class="sp" src="img/item_banner_005_sp.png">
+        <div>
+    <h3 class="fadein">
+        <span>排水金具</span>
+        DRAIN TRAP
+    </h3>
+    <p class="fadein">配管にもデザイン性を。<br>お部屋のタイプやキャビネットのタイプに合わせて自由にお選びいただけます。</p>
+    </div>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12 text-center" style="margin: 40px auto;">
+            <a href="#"><img src="img/more-btn.png" style="width: 251px;"></a>
+        </div>
+<!-- 排水金具-->
+
+<!-- キャビネット-->
+    <div class="col-12 item_banner" style="margin-top: 50px;">
+        <img class="pc" src="img/item_banner_006.png" />
+        <img class="sp" src="img/item_banner_006_sp.png">
+        <div>
+    <h3 class="fadein">
+        <span>キャビネット</span>
+        CABINET
+        </h3>
+        <p class="fadein">キャビネットは洗面空間の印象を大きく左右します。<br>飽きのこないデザインを幅広くご用意。<br>自由な組み合わせができます。</p>
+        </div>
+    </div>
+
+    <div class="col-12" style="display: flex;justify-content: space-around;">
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+    
+        <div class="rank--flexbox text-center when-pc">
+            <a href="#"><img src="img/dummy.png" class="contentimg-kadomaru-prod fadein"></a>
+            <p class="product--name-inmain" style="font-size: 14px;">
+                グラデーションガラス<br>
+                26,400円（税込）
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12 text-center" style="margin: 40px auto;">
+            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+        </div>
+<!-- キャビネット-->
+
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+    <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+</div>
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+    <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;" class="fadein"></a>
+</div>
+
+
+</div>
+</div><!--inner-->
+
+</div><!--メインカラム-->
+
+
+<!--フッター-->
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+<h4 class="foot--gradient-ttls fadein">お支払いについて</h4>
+<p>
+    お支払い方法は、クレジットカード（VISA、Master、JCB、Diners、Amex）、銀行振込、ApplePay、セブンイレブン（前払）、ローソン、郵便局ATM（前払）がご利用いただけます。<br>
+    お支払いについて、詳しくは<a href="#">こちら</a>をご確認ください。
+</p>
+
+<p style="color: #3333ff;">
+    ※クレジットカードのセキュリティはSSLと言うシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+</p>
+
+<h4 class="foot--gradient-ttls fadein">営業時間について</h4>
+<p>
+    ネットでのご注文は24時間受け付けております。<br>
+    お問い合わせは下記の時間帯にお願いします。<br>
+    月曜日から金曜日　9:00 - 17:00
+</p>
+
+<p style="color: #ff3333;">
+    ※お問い合わせは、土日祝日及び年末年始などの休業日を除く、営業時間内に順次回答いたします。<br>
+    ※お問い合わせ内容によっては回答にお時間をいただく場合や、ご返答できない場合がございます。予めご了承いただきますようお願いいたします。
+</p>
+
+<p style="color: #3333ff;">
+    ※クレジットカードのセキュリティはSSLと言うシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+</p>
+
+<h4 class="foot--gradient-ttls fadein">個人情報保護について</h4>
+<p>
+    お客様からいただいた個人情報は商品の発送とご連絡以外には一切使用いたしません。<br>
+    個人情報の保護に関する法律、その他関連する法令等を遵守するとともに、正確性及び機密性の保持に努めます。<br>
+    当社が責任を持って安全に蓄積・保管し、第三者に譲渡・提供することはございません。
+</p>
+</div>
+
+
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+    <h4 class="foot--gradient-ttls fadein">配送について</h4>
+    <p>
+        【商品発送のタイミング】<br>
+        特にご指定がない場合<br>
+        前払い決済の場合（例：銀行振込）⇒ご入金確認後、最短8営業日までに発送いたします。<br>
+        上記以外の決済の場合（例：クレジットカード）⇒ご注文確認後、最短8営業日までに発送いたします。<br>
+        ※発送前支払いの場合は、お客様のご入金タイミングにより、お届け予定日が前後することがございます。
+    </p>
+    <p>
+        【配送希望時間帯をご指定いただけます】<br>
+        8時?12時・12時?15時（一部地域のみ）<br>
+        15時?18時（一部地域のみ）<br>
+        夜間便18時?21時（一部地域のみ）<br>
+        希望なし（8時?18時）
+    </p>
+    <p>
+        ※ご指定いただく日時はあくまでも希望日ですので、配送を確約するものではございません。交通事情など予測不可能な事情により配送日が前後する場合がございます。<br>
+        ※時間を指定された場合でも、地域により承れない場合や、配送状況などにより指定時間内に配達できない場合もございます。<br>
+        ※沖縄県、離島、一部地域では時間指定を承っておりません。ご注文後にご相談させていただく場合がございます。
+    </p>
+
+    <h4 class="foot--gradient-ttls fadein">配送について</h4>
+    <p>
+        【注文内容の変更について】<br>
+        注文完了後の各種内容変更（商品変更や追加、配送情報の変更、クーポンの追加適用など）は承っておりません。<br>
+        また、追加注文や複数の注文商品をまとめての同梱や、同送のご要望はお受けできませんので、ご注意ください。
+    </p>
+    <p>
+        【長期不在などで商品が戻ってしまった場合】<br>
+        長期不在・受取辞退・住所不明などで商品をお受取りいただけず、受取期限を超えた商品は返品となります。<br>
+        返品となった商品の再配送はお受けできません。予めご了承ください。<br>
+        返送料または往復送料（当社規定の金額となります）はお客様負担となります。返品を確認後、送料を差し引いた金額でご返金いたします。<br>
+        なお、長期不在・受取辞退をされますと、今後のご注文・ご利用をお断りさせていただく場合がございます。<br>
+        住所不明により返送された場合も長期不在と同様となりますので、予めご了承ください。
+    </p>
+</div>
+<!--フッター-->
+
+</div><!--wrapper-->
+</div><!--wrapper-->
+
+
+
+
+<div class="container-fluid" style="margin-top: 40px;padding-top: 10px;padding-bottom: 10px;">
+<div class="row">
+    <div class="col-12 text-center">Mizunohana.com &copy;</div>
+</div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+</body></html>
