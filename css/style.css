@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*ご利用規約*/
+section.rule {
+  font-size: 1.6rem;
+  margin: 5% 0;
+}
+
+section.rule h3 {
+  font-size: 2.0rem;
+  padding: 3%;
+  background: #ccc;
+  margin: 5% 0;
+}
+
+section.rule hr {
+  border-bottom: dotted #aaa;
+  height: 1px;
+  margin: 3% 0;
+}
+
+section.rule ol {
+  margin: 2% 0;
+  padding-left: 3.2rem;
+}
+
+section.rule ol li {
+  line-height: 2;
+  list-style: decimal;
+}
+
+section.rule ul {
+  margin: 2% 0;
+  padding-left: 3.2rem;
+}
+
+section.rule ul li {
+  line-height: 2;
+  list-style-image: url(/img/common/li_flower.png);
+}
+
+section.rule h4 {
+  border-left: 10px solid #333;
+  padding: 0 0 0 6px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2% 0;
+}
+
+section.rule h5 {
+  font-weight: bold;
+  margin: 2% 0;
+}
+
+section.rule a {
+  margin: 2% 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none;
+  color: #31aae2;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+section.rule a:hover {
+  padding: 0 10px;
+  background-position: -100% 0;
+  color: #fff;
+}
+
+.row section {
+  margin: 0 2% !important;
+}
+/*# sourceMappingURL=style.css.map */
