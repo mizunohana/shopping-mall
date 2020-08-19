@@ -366,7 +366,7 @@ section.feature a:hover {
 section.feature_led {
   margin: 0 auto;
   background-color: black;
-  color: white;
+  color: white !important;
   text-align: center;
 }
 
@@ -415,9 +415,19 @@ section.feature_led header h1 {
 }
 
 section.feature_led header p {
+  color: white;
   width: 90%;
   text-align: center;
   font-size: 2.0rem;
+  line-height: 2;
+  font-weight: bolder;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+section.feature_led p {
+  color: white;
+  width: 90%;
+  text-align: center;
   line-height: 2;
   font-weight: bolder;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -433,6 +443,7 @@ section.feature_led h2 {
   font-weight: 900;
   text-shadow: 0 0 100px #fff, 0 0 40px #40c2f0, 0 0 50px #40c2f0, 0 0 60px #40c2f0;
   margin: 5% 0;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -548,6 +559,7 @@ section.feature_led .flex_box_item p {
 }
 
 section.feature_led .flex_box_item h3 {
+  color: #fff;
   font-size: 2.5rem;
   margin-bottom: 5%;
 }
