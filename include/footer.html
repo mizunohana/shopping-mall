@@ -1,0 +1,31 @@
+<div class="container-fluid" style="margin-top: 40px;padding-top: 10px;padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-12 text-center">Copyright &copy; mizunohana.com All rights reservrd.</div>
+    </div>
+</div>
+
+<!--コンテンツswiper-->
+<script>
+    var mySwiper = new Swiper('.cat-contents-swiper', {
+        loop: true,
+        speed: 1000,
+        autoplay: 3000,
+        centeredSlides: true,
+        slidesPerView: 5,
+        spaceBetween: 0,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        breakpoints: {
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            }
+        }
+    })
+</script>
+<!--コンテンツswiper-->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous">
+</script>

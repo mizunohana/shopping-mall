@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<head>
+    <meta charset="EUC-JP">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>【mizunohana】水まわり、自由に、咲かそ。｜楽天市場店</title>
+
+    <link href="./css/custom-style.css" rel="stylesheet">
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--ドロワーメニュー-->
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="./css/drawer.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="./js/drawer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".drawer").drawer();
+        });
+    </script>
+    <!--ドロワーメニュー-->
+
+    <script>
+        $(function () {
+            var isDisplay = false;
+            var TopBtn = $('#PageTopBtn');
+            TopBtn.css('right', '-200px');
+            var isDisplay = false;
+            //スクロール位置が100でボタンを表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    if (isDisplay == false) {
+                        isDisplay = true;
+                        TopBtn.stop().animate({
+                            'right': '10px'
+                        }, 200);
+                    }
+                } else {
+                    if (isDisplay) {
+                        isDisplay = false;
+                        TopBtn.stop().animate({
+                            'right': '-200px'
+                        }, 200);
+                    }
+                }
+            });
+            //ボタンを押下するとトップへ移動
+            TopBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <!--スムーズスクロール-->
+    <script>
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 1000;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <!--スムーズスクロール-->
+
+    <!--画像フェードイン-->
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var elemPos = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 200) {
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+    </script>
+    <!--画像フェードイン-->
+</head>
+
+<body class="drawer drawer--right">
+
+    <!--トップに戻るボタン-->
+    <p id="PageTopBtn"><a href="#most-top" style="color: #fff !important;">▲</a></p>
+    <div style="height: 0;" id="most-top"></div>
+
+    <!--PCヘッダー-->
+    <div class="container-fluid when-pc">
+        <div class="row">
+            <div class="col-12 text-center" style="padding-top: 10px;padding-bottom: 5px;">
+                <a href="/"><img src="./img/logo.png" style="width: 256px;"></a>
+            </div>
+        </div>
+    </div>
+    <!--PCヘッダー-->
+
+    <!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+    <header class="drawer-navbar when-sp" role="banner">
+        <div class="drawer-container">
+            <div class="drawer-navbar-header" style="position: fixed;top: 0;left: 0;">
+                <a class="drawer-brand" href="/"><img src="img/logo.png" style="width: 210px;padding-top:10px;"></a>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+            </div>
+            <nav class="drawer-nav" role="navigation" style="padding-left: 5px;padding-right: 5px;">
+
+                <ul class="drawer-menu drawer-menu--left"
+                    style="height: 100%;overflow: scroll;-webkit-overflow-scrolling: touch;">
+                    <li>
+                        <div class="sidenavig-sp">
+                            <!--SPメニュー-->
+                            <div class="search--section">
+                                <form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+                                    accept-charset='EUC-JP'>
+                                    <input value="6" type="hidden" name="sv">
+                                    <input value="388136" type="hidden" name="sid">
+                                    <!--店舗ID-->
+                                    <input value="mizunohana" type="hidden" name="su">
+                                    <!--店舗URL-->
+                                    <input value="mizunohana楽天市場店" type="hidden" name="sn">
+                                    <!--店舗名-->
+                                    <input value="A" type="hidden" name="f">
+                                    <input type="text" name="sitem" class="text form-control" placeholder=""
+                                        style="width: 100%;border-radius: 0;border: 1px solid #888;">
+                                    <!--検索キーワード-->
+                                    <input value="" type="submit" class="btn-search">
+                                    <!--検索ボタン-->
+                                </form>
+
+                                <ul class="mizu--tag">
+                                    <li><a href="#">#洗面ボウル</a></li>
+                                    <li><a href="#">#手洗</a></li>
+                                    <li><a href="#">#ミラー</a></li>
+                                    <li><a href="#">#LED</a></li>
+                                    <li><a href="#">#ボウル</a></li>
+                                </ul>
+                            </div>
+
+                            <h3 class="sidenav--ttls">商品カテゴリー</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">洗面ボウル</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">手洗いボウル</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">水栓金具</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ミラー</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">キャビネット</a></h4>
+                            </ul>
+
+
+                            <h3 class="sidenav--ttls">カラーイメージから選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">ホワイト・クリア系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ブラック系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ブルー系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">レッド系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">イエロー系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">グリーン系</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ゴールド・シルバー系</a></h4>
+                            </ul>
+
+
+                            <h3 class="sidenav--ttls">色から選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">ベージュ</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ブラウン</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ブラック</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">グリーン</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ホワイト</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">グレー</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ブルー</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">レッド</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ピンク</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">イエロー</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ゴールド</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">シルバー</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">パープル</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">クリア</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">アイボリー</a></h4>
+                            </ul>
+
+
+                            <h3 class="sidenav--ttls">価格から選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">100,000円以上</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">50,000～99,999円</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">30,000～49,999円</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">10,000～29,999円</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">10,000円以下</a></h4>
+                            </ul>
+
+
+                            <h3 class="sidenav--ttls">横幅から選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">550mm以上</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">400mm～549mm</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">400mm以下</a></h4>
+                            </ul>
+
+
+                            <h3 class="sidenav--ttls">材質から選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">クリスタルガラス</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ベネチアンガラス</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">ボヘミアンガラス</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">磁器</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">天然大理石</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">木製</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">竹製</a></h4>
+                            </ul>
+
+                            <h3 class="sidenav--ttls">形状から選ぶ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">四角型</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">お椀型</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">特殊型</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">楕円形</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">円形</a></h4>
+                            </ul>
+
+                            <h3 class="sidenav--ttls">水栓取付タイプ</h3>
+                            <ul class="sidenavi--itemlists">
+                                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付別タイプ</a></h4>
+                                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付可能タイプ</a></h4>
+                            </ul>
+
+                            <p class="text-center" style="margin-top: 15px;"><a href="#"><img
+                                        src="img/side_banner_001.png" style="width: 70%;"></a></p>
+                            <p class="text-center" style="margin-top: 15px;"><a href="#"><img
+                                        src="img/side_banner_002.png" style="width: 70%;"></a></p>
+
+
+                        </div>
+                        <!--SPメニュー-->
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--スライドバナー-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 head-slide-wrap" style="padding-right: 0;padding-left: 0;">
+                <!-- Slider main container -->
+                <div class="swiper-container main-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a target="_top" href="#"><img src="img/slider_001.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img src="img/slider_002.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img src="img/slider_003.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img src="img/slider_004.jpg"
+                            style="width: 100%;"></a></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-custom-button"><i class="fa fa-angle-left"></i></div>
+                    <div class="swiper-button-next swiper-custom-button"><i class="fa fa-angle-right"></i></div>
+                </div>
+
+                <script>
+                    var mySwiper = new Swiper('.main-swiper', {
+                        loop: true,
+                        speed: 1000,
+                        autoplay: 3000,
+                        centeredSlides: true,
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        pagination: '.swiper-pagination',
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        breakpoints: {
+                            767: {
+                                slidesPerView: 1,
+                                spaceBetween: 0
+                            }
+                        }
+                    })
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <!--スライドバナー-->
+
+
+    <div class="container when-pc">
+        <div class="row">
+            <div class="col-12 head-global-navi text-center">
+                <div class="flex--item"><a href="https://www.rakuten.ne.jp/gold/mizunohana/">HOME</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info2.html">ご利用ガイド</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info.html">会社概要</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info2.html">お支払い･送料･返品</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/">楽天市場</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container when-pc">
+        <div class="row">
+            <div class="col-12 head-global-navi text-center">
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="img/senmen-bowl.png" style="width: 60%;" class="fadein"><br>
+                        洗面ボウル
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="img/tearai-bowl.png" style="width: 60%;" class="fadein"><br>
+                        手洗いボウル
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="img/suisen-kanagu.png" style="width: 60%;" class="fadein"><br>
+                        水栓金具
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="img/led-mirror.png" style="width: 60%;" class="fadein"><br>
+                        LEDミラー
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="img/mirror.png" style="width: 60%;" class="fadein"><br>
+                        ミラー
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!--wrapper-->
+        <div class="row">
+            <!--wrapper-->
+
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0 col-0 sidenavig when-pc">
+                <!--サイドナビ-->
+                <div class="search--section">
+                    <form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" accept-charset='EUC-JP'>
+                        <input value="6" type="hidden" name="sv">
+                        <input value="388136" type="hidden" name="sid">
+                        <!--店舗ID-->
+                        <input value="mizunohana" type="hidden" name="su">
+                        <!--店舗URL-->
+                        <input value="mizunohana楽天市場店" type="hidden" name="sn">
+                        <!--店舗名-->
+                        <input value="A" type="hidden" name="f">
+                        <input type="text" name="sitem" class="text form-control" placeholder=""
+                            style="width: 100%;border-radius: 0;border: 1px solid #888;">
+                        <!--検索キーワード-->
+                        <input value="" type="submit" class="btn-search">
+                        <!--検索ボタン-->
+                    </form>
+
+                    <ul class="mizu--tag">
+                        <li><a href="#">#洗面ボウル</a></li>
+                        <li><a href="#">#手洗</a></li>
+                        <li><a href="#">#ミラー</a></li>
+                        <li><a href="#">#LED</a></li>
+                        <li><a href="#">#ボウル</a></li>
+                    </ul>
+                </div>
+
+                <h3 class="sidenav--ttls fadein">商品カテゴリー</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">洗面ボウル</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">マット</a></li>
+                    <li><a href="#">ホワイト</a></li>
+                    <li><a href="#">カラフル</a></li>
+                    <li><a href="#">エレガントホワイト</a></li>
+                    <li><a href="#">エレガントカラー</a></li>
+                    <li><a href="#">グラデーション</a></li>
+                    <li><a href="#">ストーン</a></li>
+                    <li><a href="#">フラワー</a></li>
+                    <li><a href="#">メタリック</a></li>
+                    <li><a href="#">和</a></li>
+                    <li><a href="#">壁掛け</a></li>
+                    <li><a href="#">クリアガラス</a></li>
+                    <li><a href="#">カラーガラス</a></li>
+                    <li><a href="#">グラデーションガラス</a></li>
+                    <li><a href="#">メタリックガラス</a></li>
+                    <li><a href="#">プレミアムシリーズ</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">手洗いボウル</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">陶磁器角形</a></li>
+                    <li><a href="#">陶磁器丸形</a></li>
+                    <li><a href="#">ガラス</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">止水栓</a></li>
+                    <li><a href="#">混合栓</a></li>
+                    <li><a href="#">単水栓</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">ミラー</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">LEDミラー</a></li>
+                    <li><a href="#">ミラー</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">キャビネット</a></h4>
+                <ul class="sidenavi--itemlists">
+
+                    <li><a href="#">サイドキャビネット</a></li>
+                    <li><a href="#">置き型天板タイプ</a></li>
+                    <li><a href="#">壁付け型天板タイプ</a></li>
+                    <li><a href="#">壁付け型ボウル一体タイプ</a></li>
+                    <li><a href="#">置き型ボウル一体タイプ</a></li>
+                </ul>
+
+                <h3 class="sidenav--ttls">色イメージから選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">ホワイト・クリア系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラック系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブルー系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">レッド系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">イエロー系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グリーン系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ゴールド・シルバー系</a></h4>
+
+                <h3 class="sidenav--ttls">色から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">ベージュ</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラウン</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラック</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グリーン</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ホワイト</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グレー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブルー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">レッド</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ピンク</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">イエロー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ゴールド</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">シルバー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">パープル</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">クリア</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">アイボリー</a></h4>
+
+                <h3 class="sidenav--ttls">価格から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">100,000円以上</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">50,000～99,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">30,000～49,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">10,000～29,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">10,000円以下</a></h4>
+
+                <h3 class="sidenav--ttls">横幅から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">550mm以上</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">400mm～549mm</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">400mm以下</a></h4>
+
+                <h3 class="sidenav--ttls">材質から選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">クリスタルガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ベネチアンガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ボヘミアンガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">天然大理石</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">木製</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">竹製</a></h4>
+
+
+                <h3 class="sidenav--ttls">形状から選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">四角型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">お椀型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">特殊型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">楕円形</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">円形</a></h4>
+
+
+                <h3 class="sidenav--ttls">水栓取付タイプ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付別タイプ</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付可能タイプ</a></h4>
+
+
+
+
+
+                <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_001.png" style="width: 100%;"
+                            class="fadein"></a></p>
+                <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_002.png" style="width: 100%;"
+                            class="fadein"></a></p>
+            </div>
+            <!--サイドナビ-->
+
+
+
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12" style="padding-left: 0;padding-right: 0;">
+                <!--メインカラム-->
+
+                <div class="container" style="margin-top: 0;">
+                    <!--inner-->
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main--ttls fadein">インフォメーション</h3>
+                            <p><span
+                                    style="display: inline-block;padding-right: 30px;margin-bottom: 15px;">2020.07.01</span>緊急事態宣言に伴う発送について
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <a href="#"><img src="img/senmen/B008_thumbnail.png" class="contentimg-kadomaru fadein"></a>
+                            <h4 class="main--catnav">清潔感がある<br class="when-pc">洗面ボウル　ホワイト特集！</h4>
+                            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <a href="#"><img src="img/tearai/B183_thumbnail.png" class="contentimg-kadomaru fadein"></a>
+                            <h4 class="main--catnav">イタリアの洗練されたデザイン<br class="when-pc">ガラスボウル　特集</h4>
+                            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <a href="#"><img src="img/cabinet/C037_thumbnail.png" class="contentimg-kadomaru fadein"></a>
+                            <h4 class="main--catnav">玄関入ったらまず手洗い<br class="when-pc">おかえり洗面</h4>
+                            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+
+                        <!--NEW ITEM-->
+                        <div class="col-12">
+                            <h3 class="main--ttls fadein" style="margin-top: 50px;">NEW ITEM</h3>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/newitem/B205_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/newitem/B205_03.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!--NEW ITEM-->
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+
+                        <!--おすすめ商品-->
+                        <div class="col-12">
+                            <h3 class="main--ttls fadein" style="margin-top: 50px;">おすすめ商品</h3>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/B176_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/B146_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/B053_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/B199_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/LM001_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 text-center" style="margin-top: 30px;">
+                            <a href="#"><img src="img/osusume/C043_thumbnail.png" class="contentimg-kadomaru-prod fadein"></a>
+                            <p class="product--name-inmain">
+                                グラデーションガラス<br>
+                                26,400円（税込）
+                            </p>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!--おすすめ商品-->
+
+
+                        <!--おすすめ商品-->
+                        <div class="col-12">
+                            <h3 class="main--ttls fadein" style="margin-top: 50px;">ランキング</h3>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/ranking/no1-B083_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/ranking/no2-B098_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/ranking/no3-LM002_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/ranking/no4-B015_01.png" class="contentimg-kadomaru-prod fadein"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/ranking/no5-C037.png" class="contentimg-kadomaru-prod fadein"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+
+                        <!-- 手洗いボウル-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_001.png">
+                            <img class="when-sp" src="img/item_banner_001_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>手洗いボウル</span>
+                                    HAND WASH BASIN
+                                </h3>
+                                <p class="fadein">空間デザインを邪魔しないコンパクト設計。<br>トイレ内や玄関、階段踊り場などのセカンド洗面にちょうどいいサイズ感です。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B187_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B190_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B196_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B195_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B183_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B181_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B184_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B182_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B192_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/tearai/B191_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- 手洗いボウル-->
+
+
+                        <!-- 洗面ボウル-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_002.png">
+                            <img class="when-sp" src="img/item_banner_002_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>洗面ボウル</span>
+                                    WASH BASIN
+                                </h3>
+                                <p class="fadein">
+                                    ベーシックなデザインから個性的な柄や形の洗面ボウルを多数取り揃えています。<br>さまざまな商業施設や店舗にマッチする洗面ボウルをお選びください。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B008_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B093_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B136_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B120_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B161_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B117_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B113_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B025_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B058_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/senmen/B084_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- 洗面ボウル-->
+
+                        <!-- ミラー-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_003.png">
+                            <img class="when-sp" src="img/item_banner_003_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>ミラー</span>
+                                    Mirror
+                                </h3>
+                                <p class="fadein">華やかで明るい空間を演出するこだわりのミラー。<br>省電力なLEDミラーがお顔を明るく照らします。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/LM004_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/LM002_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/LM003_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/M010_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/M008_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/LM001_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/mirror/LM005_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- ミラー-->
+
+                        <!-- 水栓金具ー-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_004.png" />
+                            <img class="when-sp" src="img/item_banner_004_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>水栓金具</span>
+                                    FAUCET
+                                </h3>
+                                <p class="fadein">
+                                    「mizunohana」の洗面ボウルにフィットする水栓金具。<br>日本の規格に対応しているので安心。<br>洗面ボウルのデザインと相性のいい組み合わせが、水まわりをさらに引き立てます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F005_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F002_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F003_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F004_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F007_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F001_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/suisen/F006_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- 水栓金具ー-->
+
+                        <!-- 排水金具-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_005.png" />
+                            <img class="when-sp" src="img/item_banner_005_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>排水金具</span>
+                                    DRAIN TRAP
+                                </h3>
+                                <p class="fadein">配管にもデザイン性を。<br>お部屋のタイプやキャビネットのタイプに合わせて自由にお選びいただけます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/T002_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/T001_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D002_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D003_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D017_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D004_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D007_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D010_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D012_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/haisui/D014_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- 排水金具-->
+
+                        <!-- キャビネット-->
+                        <div class="col-12 item_banner" style="margin-top: 50px;">
+                            <img class="when-pc" src="img/item_banner_006.png" />
+                            <img class="when-sp" src="img/item_banner_006_sp.png" style="width: 100%;">
+                            <div>
+                                <h3 class="fadein">
+                                    <span>キャビネット</span>
+                                    CABINET
+                                </h3>
+                                <p class="fadein">キャビネットは洗面空間の印象を大きく左右します。<br>飽きのこないデザインを幅広くご用意。<br>自由な組み合わせができます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="margin-top: 20px;">
+                            <!-- Slider main container -->
+                            <div class="swiper-container cat-contents-swiper fadein">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/cabinet/C037_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/cabinet/C043_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/cabinet/R001_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/cabinet/R002_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <a href="#"><img src="img/cabinet/R003_thumbnail.png" class="contentimg-kadomaru-prod fadein scrollin"></a>
+                                        <p class="product--name-inmain" style="font-size: 14px;">
+                                            グラデーションガラス<br>
+                                            26,400円（税込）
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div>-->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-custom-button-forcont"><i class="fa fa-angle-left" style="color: #fff;"></i></div>
+                                <div class="swiper-button-next swiper-custom-button-forcont"><i class="fa fa-angle-right" style="color: #fff;"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center" style="margin: -20px auto 40px auto;">
+                            <a href="#"><img src="img/more-btn.png" style="width: 251px;" class="fadein"></a>
+                        </div>
+                        <!-- キャビネット-->
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 main--col2-bnr">
+                            <a href="#"><img src="img/catching_banner_2col_001.png" style="width: 100%;"
+                                    class="fadein"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--inner-->
+
+            </div>
+            <!--メインカラム-->
+
+
+            <!--フッター-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h4 class="foot--gradient-ttls fadein">ショップ情報</h4>
+                <p>
+                    営業時間：10時 - 17時<br>
+                    定休日：水・土・日・祝<br>
+                    お問い合わせ：mizunohana@shop.rakuten.co.jp<br>
+                    ネットでのご注文は24時間受け付けております。
+                </p>
+
+                <h4 class="foot--gradient-ttls fadein">お支払いについて</h4>
+                <p>
+                    お支払い方法は、クレジットカード（VISA、Master、JCB、Diners、Amex）、銀行振込、ApplePay、セブンイレブン（前払）、ローソン、郵便局ATM（前払）がご利用いただけます。<br>
+                    お支払いについて、詳しくは<a href="https://www.rakuten.co.jp/mizunohana/info2.html#payment">こちら</a>をご確認ください。
+                </p>
+
+                <p style="color: #3333ff;font-size: 12px;">
+                    ※クレジットカードのセキュリティはSSLと言うシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+                </p>
+
+                <h4 class="foot--gradient-ttls fadein">個人情報保護について</h4>
+                <p>
+                    お客様からいただいた個人情報は商品の発送とご連絡以外には一切使用いたしません。<br>
+                    個人情報の保護に関する法律、その他関連する法令等を遵守するとともに、正確性及び機密性の保持に努めます。<br>
+                    当社が責任を持って安全に蓄積・保管し、第三者に譲渡・提供することはございません。
+                </p>
+            </div>
+
+
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h4 class="foot--gradient-ttls fadein">配送について</h4>
+                <p>
+                    商品金額が3,980円以上は、送料無料です。<br>
+                    3,980円未満は850円掛かります。<br>
+                    ただし、沖縄/離島/一部地域は9,800円以上で送料無料となります。<br>
+                    ※一部の商品については、送料無料サービス対象外の商品もございますので、ご注意ください。
+                </p>
+
+                <h4 class="foot--gradient-ttls fadein">返品・交換について</h4>
+                <p>
+                    お客様のご都合による返品・交換はお受けしておりません。あらかじめご了承ください。<br>
+                    初期不良・破損の場合は商品ご到着後、7日以内に限りご対応させて頂きます。<br>
+                    その際、返品処理もしくは、代わりの商品をお送りするなど、早急に対応致します。<br>
+                    ご返品、ご交換の場合はダンボール箱が必要となりますので必ず保管をお願い致します。<br>
+                    弊社理由による返品は、当社の送料負担にて対応いたします。<br>
+                    一部商品、限定在庫などで破損に対する代替品のご準備ができない場合は、やむを得ずご返金によるキャンセルとさせていただく場合がございます。
+                </p>
+            </div>
+            <!--フッター-->
+
+        </div>
+        <!--wrapper-->
+    </div>
+    <!--wrapper-->
+
+
+
+
+    <div class="container-fluid" style="margin-top: 40px;padding-top: 10px;padding-bottom: 10px;">
+        <div class="row">
+            <div class="col-12 text-center">Copyright &copy; mizunohana.com All rights reservrd.</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!--コンテンツswiper-->
+    <script>
+        var mySwiper = new Swiper('.cat-contents-swiper', {
+            loop: true,
+            speed: 1000,
+            autoplay: 3000,
+            centeredSlides: true,
+            slidesPerView: 5,
+            spaceBetween: 0,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            breakpoints: {
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                }
+            }
+        })
+    </script>
+<!--コンテンツswiper-->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
