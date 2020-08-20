@@ -32,9 +32,32 @@ h2 {
   margin: 0 2%;
 }
 
+a.qa_list {
+  margin: 2% 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+  text-decoration: none !important;
+  color: rgb(49, 170, 226) !important;
+  line-height: 2;
+  font-size: $font-size-16;
+  font-weight: 500;
 
+  &:hover {
+    padding: 0 10px;
+    background-position: -100% 0;
+    color: #fff !important;
+  }
+}
 
+span.underline {
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+  font-weight: 600;
+}
 
 @import "content/showroom";
 @import "content/rule";
 @import "content/oteire";
+@import "content/faq";
+
