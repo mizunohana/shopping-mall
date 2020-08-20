@@ -1,10 +1,39 @@
-
-$border-radius: 10px;
-$margintb_5:5% 0;
-$font-size-16:1.6rem;
-$font-size-sp:1.4rem;
-
-@import "rule";
-@import "showroom"
+@import "functions";
 
 
+html {
+  font-size: 62.3%;
+}
+
+body {
+  color: $text-color;
+  font-size: $font-size-16;
+  //16px
+  font-family: "M PLUS 1p", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 2.3rem !important;
+  width: 100%;
+  position: relative;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #40c2f0 0%, #e85483 100%);
+  border-image-slice: 0 0 1;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+/*content*/
+.row section.container{
+  width: 100%;
+  margin: 0 2%;
+}
+
+
+
+
+@import "content/showroom";
+@import "content/rule";

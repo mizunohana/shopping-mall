@@ -1,0 +1,297 @@
+section.showroom {
+  margin: 0 2%;
+}
+
+.showroom_box {
+  margin: 3% 0;
+}
+
+.sr_info {
+  text-align: center;
+}
+
+.showroom_box {
+  font-size: $font-size-16;
+
+  img {
+    object-fit: cover;
+    font-family: 'object-fit: cover';
+    margin: 3% 0;
+  }
+
+  h4 {
+    padding-bottom: .5em;
+    font-size: 2.4rem;
+    font-weight: 750;
+    text-align: center;
+    border-bottom: #e85483 2px solid;
+    margin-bottom: 1%;
+
+    span {
+      display: block;
+      margin-bottom: .2em;
+      color: #aaa;
+      font-size: 1.3rem;
+    }
+  }
+
+  h5 {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 300px;
+    max-width: 100%;
+    color: #fff;
+    font-size: 2.0rem;
+    background: #03A9F4;
+    text-align: center;
+    border-radius: $border-radius;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+      border: 15px solid transparent;
+      border-top: 15px solid #03A9F4;
+    }
+  }
+
+  p {
+    line-height: 2;
+  }
+  ul {
+    margin-left: -40px;
+    margin-top: 5%;
+  }
+
+}
+
+.acces {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.showrroom_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+
+
+  li {
+    width: 280px;
+    text-align: center;
+    background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+    height: 45px;
+    line-height: 30px;
+    margin-right: 2px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px;
+    color: #fff;
+    border-radius: $border-radius;
+    margin-bottom: 5%;
+
+    &:hover {
+      background: linear-gradient(45deg, #e85483 0%, #40c2f0 100%);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  a {
+    text-decoration: none !important;
+
+    &:active {
+      text-decoration: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .showrroom_list {
+    flex-direction: column;
+    margin-bottom: 15%;
+
+    li {
+      width: 80%;
+      margin: 5% auto;
+    }
+  }
+}
+
+/*=== 画像の表示エリア ================================= */
+
+.slide {
+  position: relative;
+  overflow: hidden;
+
+  /* 画像のサイズに合わせて変更ください */
+  width: 100%;
+  height: 500px;
+  margin: auto;
+
+  /* サンプルは中央寄せの背景：白 */
+  background: #fff;
+
+  img {
+    display: block;
+    position: absolute;
+
+    /* 画像のサイズを表示エリアに合せる */
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    animation: slideAnime 15s ease infinite;
+    border-radius: $border-radius;
+
+    &:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 3s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 6s;
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: 9s;
+    }
+
+    &:nth-of-type(5) {
+      animation-delay: 12s;
+    }
+  }
+}
+
+/*=== 画像の設定 ======================================= */
+
+/*=== スライドのアニメーションを段差で開始する ========= */
+
+/*=== スライドのアニメーション ========================= */
+@keyframes slideAnime {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slide {
+    height: 200px;
+  }
+}
+
+/*もっとみるボタン*/
+
+.cp_box {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  position: relative;
+  margin-bottom: 10%;
+
+  label {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+
+    /* グラデーションの高さ */
+    cursor: pointer;
+    text-align: center;
+
+    /* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+    background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+  }
+
+  input:checked+label {
+    background: inherit;
+
+    /* 開いた時にグラデーションを消す */
+  }
+
+  label:after {
+    line-height: 2.5rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 50%;
+    width: 16rem;
+    content: ' もっと見る';
+    transform: translate(-50%, 0);
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    border-radius: $border-radius;
+    background: linear-gradient(45deg, #40c2f0 0%, #e85483 100%);
+  }
+
+  input {
+    display: none;
+  }
+
+  .cp_container {
+    overflow: hidden;
+    height: 750px;
+
+    /* 開く前に見えている部分の高さ */
+    transition: all 0.5s;
+  }
+
+  input:checked {
+    +label {
+      /*display: none ; 閉じるボタンを消す場合解放 */
+
+      &:after {
+        font-family: FontAwesome;
+        content: '閉じる';
+      }
+    }
+
+    ~.cp_container {
+      height: auto;
+      padding-bottom: 80px;
+
+      /* 閉じるボタンのbottomからの位置 */
+      transition: all 0.5s;
+    }
+  }
+}
+
+li {
+  list-style: none;
+}
