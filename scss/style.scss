@@ -27,7 +27,7 @@ h2 {
 }
 
 /*content*/
-.row section.container{
+.row section.inner_container{
   width: 100%;
   margin: 0 2%;
 }
@@ -37,3 +37,4 @@ h2 {
 
 @import "content/showroom";
 @import "content/rule";
+@import "content/oteire";
