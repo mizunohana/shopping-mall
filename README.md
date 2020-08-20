@@ -4,10 +4,6 @@
 
 https://www.rakuten.ne.jp/gold/mizunohana/
 
-## ショールーム
-
-https://www.rakuten.ne.jp/gold/mizunohana/content/showroom.html
-
 ## 特集
 
 ### 手洗いボウルの紹介
@@ -21,3 +17,14 @@ https://www.rakuten.ne.jp/gold/mizunohana/feature/led-miror.html
 ### お手入れ
 
 https://www.rakuten.ne.jp/gold/mizunohana/feature/oteire.html
+
+
+## content
+
+### ショールーム
+
+https://www.rakuten.ne.jp/gold/mizunohana/content/showroom.html
+
+### FAQ
+
+https://www.rakuten.ne.jp/gold/mizunohana/content/faq.html
