@@ -32,3 +32,13 @@ https://www.rakuten.ne.jp/gold/mizunohana/content/faq.html
 ### プライバシーポリシー
 
 https://www.rakuten.ne.jp/gold/mizunohana/content/privacypolicy.html
+
+
+todo: 会社概要をhttps://www.rakuten.co.jp/haikanbuhin/info.htmlのようにいじりたい
+
+https://master.rms.rakuten.co.jp/rms/mall/rsf/shop/vc
+説明文
+説明項目をいじる
+
+https://master.rms.rakuten.co.jp/rms/mall/rsf/shop/vc
+キレイにする
