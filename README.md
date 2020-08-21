@@ -28,3 +28,7 @@ https://www.rakuten.ne.jp/gold/mizunohana/content/showroom.html
 ### FAQ
 
 https://www.rakuten.ne.jp/gold/mizunohana/content/faq.html
+
+### プライバシーポリシー
+
+https://www.rakuten.ne.jp/gold/mizunohana/content/privacypolicy.html
