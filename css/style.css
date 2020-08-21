@@ -572,4 +572,51 @@ section.faq li:first-child::before {
 section.faq li:nth-child(2) {
   padding-left: 1.7rem;
 }
+
+.personal_info {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.personal_info h3 {
+  font-size: 2.0rem;
+  margin: 3% 0;
+  border-left: 10px solid #222;
+  padding-left: 13px;
+}
+
+.personal_info ol {
+  padding: 0 3%;
+}
+
+.personal_info li {
+  list-style: decimal;
+  line-height: 1.8;
+  margin-bottom: 2%;
+  margin-left: 20px;
+}
+
+.personal_info li span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.personal_info li p.tex_right {
+  text-align: right;
+}
+
+.personal_info div {
+  border: 1px solid #aaa;
+  padding: 2%;
+  margin: 3% 0;
+}
+
+.personal_info div p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 1%;
+  border-bottom: #aaa 1px solid;
+}
 /*# sourceMappingURL=style.css.map */
