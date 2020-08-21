@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<head>
+    <meta charset="EUC-JP">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>ご利用ガイド｜mizunohana 楽天市場店</title>
+
+    <link href="./../css/custom-style.css" rel="stylesheet">
+    <link href="./../css/style.css" rel="stylesheet">
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--ie object-fit-->
+    <script src="./../js/ofi.min.js"></script>
+
+
+    <!--ドロワーメニュー-->
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="./css/drawer.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./../js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="./../js/drawer.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".drawer").drawer();
+        });
+    </script>
+    <!--ドロワーメニュー-->
+
+    <script>
+        $(function () {
+            var isDisplay = false;
+            var TopBtn = $('#PageTopBtn');
+            TopBtn.css('right', '-200px');
+            var isDisplay = false;
+            //スクロール位置が100でボタンを表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    if (isDisplay == false) {
+                        isDisplay = true;
+                        TopBtn.stop().animate({
+                            'right': '10px'
+                        }, 200);
+                    }
+                } else {
+                    if (isDisplay) {
+                        isDisplay = false;
+                        TopBtn.stop().animate({
+                            'right': '-200px'
+                        }, 200);
+                    }
+                }
+            });
+            //ボタンを押下するとトップへ移動
+            TopBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <!--スムーズスクロール-->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+
+        $(function () {
+            objectFitImages();
+        });
+    </script>
+    <!--スムーズスクロール-->
+
+</head>
+
+<body class="drawer drawer--right">
+
+    <!--トップに戻るボタン-->
+    <p id="PageTopBtn"><a href="#most-top" style="color: #fff !important;">▲</a></p>
+    <div style="height: 0;" id="most-top"></div>
+
+    <!--PCヘッダー-->
+    <div class="container-fluid when-pc">
+        <div class="row">
+            <div class="col-12 text-center" style="padding-top: 10px;padding-bottom: 5px;">
+                <a href="/"><img src="https://www.rakuten.ne.jp/gold/mizunohana/img/logo.png" style="width: 256px;"></a>
+            </div>
+        </div>
+    </div>
+    <!--PCヘッダー-->
+
+    <!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+    <header class="drawer-navbar when-sp" role="banner">
+        <iframe src="https://www.rakuten.ne.jp/gold/mizunohana/include/header.html" scrolling="no" frameborder="0"
+            class="header"></iframe>
+    </header>
+    <!--/// SP用ヘッダー /////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--スライドバナー-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 head-slide-wrap" style="padding-right: 0;padding-left: 0;">
+                <!-- Slider main container -->
+                <div class="swiper-container main-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a target="_top" href="#"><img
+                                    src="https://www.rakuten.ne.jp/gold/mizunohana/img/slider_001.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img
+                                    src="https://www.rakuten.ne.jp/gold/mizunohana/img/slider_002.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img
+                                    src="https://www.rakuten.ne.jp/gold/mizunohana/img/slider_003.jpg"
+                                    style="width: 100%;"></a></div>
+                        <div class="swiper-slide"><a target="_top" href="#"><img
+                                    src="https://www.rakuten.ne.jp/gold/mizunohana/img/slider_004.jpg"
+                                    style="width: 100%;"></a></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-custom-button"><i class="fa fa-angle-left"></i></div>
+                    <div class="swiper-button-next swiper-custom-button"><i class="fa fa-angle-right"></i></div>
+                </div>
+
+                <script>
+                    var mySwiper = new Swiper('.main-swiper', {
+                        loop: true,
+                        speed: 1000,
+                        autoplay: 3000,
+                        centeredSlides: true,
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        pagination: '.swiper-pagination',
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        breakpoints: {
+                            767: {
+                                slidesPerView: 1,
+                                spaceBetween: 0
+                            }
+                        }
+                    })
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <!--スライドバナー-->
+
+
+    <div class="container when-pc">
+        <div class="row">
+            <div class="col-12 head-global-navi text-center">
+                <div class="flex--item"><a href="https://www.rakuten.ne.jp/gold/mizunohana/">HOME</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info2.html">ご利用ガイド</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info.html">会社概要</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/mizunohana/info2.html">お支払い･送料･返品</a></div>
+                <div class="flex--item"><a href="https://www.rakuten.co.jp/">楽天市場</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container when-pc">
+        <div class="row">
+            <div class="col-12 head-global-navi text-center">
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="https://www.rakuten.ne.jp/gold/mizunohana/img/senmen-bowl.png"
+                            style="width: 60%;"><br>
+                        洗面ボウル
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="https://www.rakuten.ne.jp/gold/mizunohana/img/tearai-bowl.png"
+                            style="width: 60%;"><br>
+                        手洗いボウル
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="https://www.rakuten.ne.jp/gold/mizunohana/img/suisen-kanagu.png"
+                            style="width: 60%;"><br>
+                        水栓金具
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="https://www.rakuten.ne.jp/gold/mizunohana/img/led-mirror.png" style="width: 60%;"><br>
+                        LEDミラー
+                    </a>
+                </div>
+
+                <div class="flex--item02">
+                    <a href="#">
+                        <img src="https://www.rakuten.ne.jp/gold/mizunohana/img/mirror.png" style="width: 60%;"><br>
+                        ミラー
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!--wrapper-->
+        <div class="row">
+            <!--wrapper-->
+
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-0 col-0 sidenavig when-pc">
+                <!--サイドナビ-->
+                <div class="search--section">
+                    <form method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" accept-charset='EUC-JP'>
+                        <input value="6" type="hidden" name="sv">
+                        <input value="388136" type="hidden" name="sid">
+                        <!--店舗ID-->
+                        <input value="mizunohana" type="hidden" name="su">
+                        <!--店舗URL-->
+                        <input value="mizunohana楽天市場店" type="hidden" name="sn">
+                        <!--店舗名-->
+                        <input value="A" type="hidden" name="f">
+                        <input type="text" name="sitem" class="text form-control" placeholder=""
+                            style="width: 100%;border-radius: 0;border: 1px solid #888;">
+                        <!--検索キーワード-->
+                        <input value="" type="submit" class="btn-search">
+                        <!--検索ボタン-->
+                    </form>
+
+                    <ul class="mizu--tag">
+                        <li><a href="#">#洗面ボウル</a></li>
+                        <li><a href="#">#手洗</a></li>
+                        <li><a href="#">#ミラー</a></li>
+                        <li><a href="#">#LED</a></li>
+                        <li><a href="#">#ボウル</a></li>
+                    </ul>
+                </div>
+
+                <h3 class="sidenav--ttls">商品カテゴリー</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">洗面ボウル</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">マット</a></li>
+                    <li><a href="#">ホワイト</a></li>
+                    <li><a href="#">カラフル</a></li>
+                    <li><a href="#">エレガントホワイト</a></li>
+                    <li><a href="#">エレガントカラー</a></li>
+                    <li><a href="#">グラデーション</a></li>
+                    <li><a href="#">ストーン</a></li>
+                    <li><a href="#">フラワー</a></li>
+                    <li><a href="#">メタリック</a></li>
+                    <li><a href="#">和</a></li>
+                    <li><a href="#">壁掛け</a></li>
+                    <li><a href="#">クリアガラス</a></li>
+                    <li><a href="#">カラーガラス</a></li>
+                    <li><a href="#">グラデーションガラス</a></li>
+                    <li><a href="#">メタリックガラス</a></li>
+                    <li><a href="#">プレミアムシリーズ</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">手洗いボウル</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">陶磁器角形</a></li>
+                    <li><a href="#">陶磁器丸形</a></li>
+                    <li><a href="#">ガラス</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">止水栓</a></li>
+                    <li><a href="#">混合栓</a></li>
+                    <li><a href="#">単水栓</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">ミラー</a></h4>
+                <ul class="sidenavi--itemlists">
+                    <li><a href="#">LEDミラー</a></li>
+                    <li><a href="#">ミラー</a></li>
+                </ul>
+
+                <h4 class="sidenavi--itemcat"><a href="#">キャビネット</a></h4>
+                <ul class="sidenavi--itemlists">
+
+                    <li><a href="#">サイドキャビネット</a></li>
+                    <li><a href="#">置き型天板タイプ</a></li>
+                    <li><a href="#">壁付け型天板タイプ</a></li>
+                    <li><a href="#">壁付け型ボウル一体タイプ</a></li>
+                    <li><a href="#">置き型ボウル一体タイプ</a></li>
+                </ul>
+
+                <h3 class="sidenav--ttls">色イメージから選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">ホワイト・クリア系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラック系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブルー系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">レッド系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">イエロー系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グリーン系</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ゴールド・シルバー系</a></h4>
+
+                <h3 class="sidenav--ttls">色から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">ベージュ</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラウン</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブラック</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グリーン</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ホワイト</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">グレー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ブルー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">レッド</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ピンク</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">イエロー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ゴールド</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">シルバー</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">パープル</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">クリア</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">アイボリー</a></h4>
+
+                <h3 class="sidenav--ttls">価格から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">100,000円以上</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">50,000~99,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">30,000~49,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">10,000~29,999円</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">10,000円以下</a></h4>
+
+                <h3 class="sidenav--ttls">横幅から選ぶ</h3>
+                <h4 class="sidenavi--itemcat"><a href="#">550mm以上</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">400mm~549mm</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">400mm以下</a></h4>
+
+                <h3 class="sidenav--ttls">材質から選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">陶磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">クリスタルガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ベネチアンガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">ボヘミアンガラス</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">磁器</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">天然大理石</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">木製</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">竹製</a></h4>
+
+
+                <h3 class="sidenav--ttls">形状から選ぶ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">四角型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">お椀型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">特殊型</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">楕円形</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">円形</a></h4>
+
+
+                <h3 class="sidenav--ttls">水栓取付タイプ</h3>
+
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付別タイプ</a></h4>
+                <h4 class="sidenavi--itemcat"><a href="#">水栓金具取付可能タイプ</a></h4>
+
+
+
+
+
+                <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_001.jpg" style="width: 100%;"
+                            class="fadein"></a></p>
+                <p style="margin-top: 15px;"><a href="#"><img src="img/side_banner_002.jpg" style="width: 100%;"
+                            class="fadein"></a></p>
+            </div>
+            <!--サイドナビ-->
+
+
+
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12" style="padding-left: 0;padding-right: 0;">
+                <!--メインカラム-->
+
+                <div class="container" style="margin-top: 0;">
+                    <!--inner-->
+                    <div class="row">
+                        <section class="inner_container">
+                            <section class="guide" style="margin-top: 0;">
+    <h2>ご利用ガイド</h2>
+</section>
+
+<section class="guide" >
+    <h3>ご注文について</h3>
+    <p>ご注文は、当サイト [mizunohana　楽天市場店] からお願いします。</p>
+
+    <h4>1. 商品をさがす</h4>
+    <p>各種検索機能から、ご希望の商品をお選びください。</p>
+
+    <h4>2. 買い物かごに入れる</h4>
+    <p>購入する商品が決まりましたら数量を入力し「買い物かごに入れる」をクリックしてください。</p>
+
+    <h4>3. 必要情報の入力</h4>
+    <p>商品のお届け先など、必要情報を入力してください。</p>
+
+    <h4>4. お支払い方法の選択</h4>
+    <p>ご希望のお支払い方法をお選びください。</p>
+
+    <h4>5. 注文の確定</h4>
+    <p>
+        注文内容をご確認のうえ「注文決定」をクリックしてください。これでご注文は完了です。<br>
+        ※ご注文受付完了後の追加・変更・キャンセルはお受けできません。
+    </p>
+
+    <h4>6. サンクスメール</h4>
+    <p>当サイトよりご注文を受信したことをお知らせするメール（商品名・数量・価格・送料・出荷目安を記載）を自動送信します。</p>
+
+    <h4>7. 出荷案内メール</h4>
+    <p>ご注文商品が出荷されたことをお知らせするメールをお送りします。<br>
+        ※メールには配送便の送り状番号も記載しています。</p>
+
+    <h4>8. 商品の到着</h4>
+    <p>初期不良・破損等がないかご確認をお願いします</p>
+
+    <div>
+        <p>・当サイトではFAX,TEL,メールでのご注文はお受けできません。</p>
+        <p>・当サイトでは先付け指定納期や配達の時間指定等はお受けできません。</p>
+    </div>
+</section>
+
+<section class="guide">
+    <h3>お支払い方法について</h3>
+    <p>お支払い方法は、クレジットカード（VISA、Master、JCB、Diners、Amex）、銀行振込、ApplePay、
+        セブンイレブン（前払）、ローソン、郵便局ATM（前払）がご利用いただけます。</p>
+    <p>詳しくは、<a class="qa_list" href="https://www.rakuten.co.jp/mizunohana/info.html#price">こちら</a>をご覧ください。</p>
+</section>
+
+<section class="guide">
+    <h3>配送について</h3>
+    <p>
+        ご注文確認（前払いの場合はご入金確認）後、1週間程度でご指定の送付先へ発送いたします。<br>
+        ※お届け日時、運送便のご指定はお受けしておりません。
+    </p>
+    <p>詳しくは、<a class="qa_list" href="https://www.rakuten.co.jp/mizunohana/info.html#haisou">こちら</a>をご覧ください。</p>
+</section>
+
+<section class="guide">
+    <h3>送料について</h3>
+    <p>
+        商品金額が3,980円以上は、送料無料です。<br>
+        3,980円未満は935円から掛かります。<br>
+        ただし、沖縄/離島/一部地域は9,800円以上で送料無料となります。<br>
+        ※一部の商品については、送料無料サービス対象外の商品もございますので、ご注意下さい。
+    </p>
+</section>
+
+<section class="guide">
+    <h3>返品・交換・キャンセルについて</h3>
+
+    <h4>1. ご注文のキャンセル・変更について</h4>
+    <p>
+        ご注文いただいた後、速やかに処理いたしますので、キャンセルや商品の変更対応はいたしかねます。
+    </p>
+
+    <h4>2. 商品の交換について</h4>
+    <p>
+        イメージ違いなどのお客様のご都合による返品は承っておりません。<br>
+        お届けした商品が不良品だった場合や誤送があった場合は、速やかに商品を交換させていただきます。<br>
+        商品到着から7日以内にご連絡ください。
+    </p>
+
+    <h4>3. 返品ポリシー</h4>
+    当サイトでは、お客様と当社の双方に負担となる返品をなるべく減らしたいと考えています。<br>
+    特にその原因となる「ミス」を防止するため受注~出荷のあらゆるプロセスで問題点の改善に取り組んでいます。<br>
+    お客様にもぜひ趣旨をご理解のうえ、ご協力いただけますようお願いします。<br>
+
+    <hr>
+
+    <p>以下の場合、返品はお受けできません</p>
+    <ul>
+        <li>お客様の責任によりキズ、汚れなどが生じた商品</li>
+        <li>施工・取付済みの商品</li>
+        <li>お届けから7日以上経過した商品</li>
+        <li>「返品不可」表示のある商品</li>
+        <li>セット販売での一部商品のみの返品・交換</li>
+        <li>受注生産品</li>
+        <li>メーカーが初期不良品としない場合</li>
+    </ul>
+
+    <h4>4. 返品手数料について</h4>
+    <p>
+        お客様の事情により返品される場合は、当社規定に従い、返品1点につき【商品代金の10％~50％】の返品手数料を申し受けます。<br>
+        配送ミスや不具合などを除く、お客様都合による返品につきましては、返品にかかる手数料及び送料の全額を お客様負担とさせていただきますので、あらかじめご了承ください。
+    </p>
+
+    <h4>5. 返品の手順</h4>
+    <ol>
+        <li>下記の必要事項をご記入の上、商品到着から7日以内に<a class="qa_list" href="mailto:mizunohana@shop.rakuten.co.jp">メール</a>でご連絡ください。<br>
+           　・お名前<br>
+            　・お電話番号<br>
+            　・メールアドレス<br>
+            　・受注番号<br>
+            　・返品希望商品名<br>
+            　・返品希望理由
+        </li>
+        <li>内容を確認後、当社より返品受付 メールをお送りします。</li>
+        <li>返品受付メールに記載の返送先まで商品をお送りください。</li>
+        <li>返品商品の到着後、ご返金の手続きに入ります。</li>
+    </ol>
+    <p>
+        お支払い総額から返品手数料と送料を差し引いた金額を返金します。完了までには少しお時間を頂戴することがありますので、予めご了承ください。
+    </p>
+
+    <h4>6. 返品の送料負担</h4>
+    <p>返品にかかる送料は、返品理由が当社事情の場合は当社が負担させていただきます。<br>
+        但しお客様都合の場合は、恐れ入りますが、商品の返送料はお客様のご負担となりますのであらかじめご了承ください。</p>
+
+    <h4>7. クーリングオフについて</h4>
+    <p>
+        当サイトはクーリングオフの適用対象外業種となりますので、クーリングオフはご利用になれません。
+    </p>
+</section>
+
+</section>
+</div>
+</div>
+<!--inner-->
+
+</div>
+<!--メインカラム-->
+
+
+<!--フッター-->
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+<h4 class="foot--gradient-ttls">ショップ情報</h4>
+<p>
+営業時間：10時 - 17時<br>
+定休日：水・土・日・祝<br>
+お問い合わせ：mizunohana@shop.rakuten.co.jp<br>
+ネットでのご注文は24時間受け付けております。
+</p>
+
+<h4 class="foot--gradient-ttls">お支払いについて</h4>
+<p>
+お支払い方法は、クレジットカード（VISA、Master、JCB、Diners、Amex）、銀行振込、ApplePay、セブンイレブン（前払）、ローソン、郵便局ATM（前払）がご利用いただけます。<br>
+お支払いについて、詳しくは<a href="https://www.rakuten.co.jp/mizunohana/info2.html#payment">こちら</a>をご確認ください。
+</p>
+
+<p style="color: #3333ff;font-size: 12px;">
+※クレジットカードのセキュリティはSSLと言うシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+</p>
+
+<h4 class="foot--gradient-ttls">個人情報保護について</h4>
+<p>
+お客様からいただいた個人情報は商品の発送とご連絡以外には一切使用いたしません。<br>
+個人情報の保護に関する法律、その他関連する法令等を遵守するとともに、正確性及び機密性の保持に努めます。<br>
+当社が責任を持って安全に蓄積・保管し、第三者に譲渡・提供することはございません。
+</p>
+</div>
+
+
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+<h4 class="foot--gradient-ttls">配送について</h4>
+<p>
+商品金額が3,980円以上は、送料無料です。<br>
+3,980円未満は850円掛かります。<br>
+ただし、沖縄/離島/一部地域は9,800円以上で送料無料となります。<br>
+※一部の商品については、送料無料サービス対象外の商品もございますので、ご注意ください。
+</p>
+
+<h4 class="foot--gradient-ttls">返品・交換について</h4>
+<p>
+お客様のご都合による返品・交換はお受けしておりません。あらかじめご了承ください。<br>
+初期不良・破損の場合は商品ご到着後、7日以内に限りご対応させて頂きます。<br>
+その際、返品処理もしくは、代わりの商品をお送りするなど、早急に対応致します。<br>
+ご返品、ご交換の場合はダンボール箱が必要となりますので必ず保管をお願い致します。<br>
+弊社理由による返品は、当社の送料負担にて対応いたします。<br>
+一部商品、限定在庫などで破損に対する代替品のご準備ができない場合は、やむを得ずご返金によるキャンセルとさせていただく場合がございます。
+</p>
+</div>
+<!--フッター-->
+
+</div>
+<!--wrapper-->
+</div>
+<!--wrapper-->
+
+
+
+
+<div class="container-fluid" style="margin-top: 40px;padding-top: 10px;padding-bottom: 10px;">
+<div class="row">
+<div class="col-12 text-center">Copyright &copy; mizunohana.com All rights reservrd.</div>
+</div>
+</div>
+
+
+<!--コンテンツswiper-->
+<script>
+var mySwiper = new Swiper('.cat-contents-swiper', {
+loop: true,
+speed: 1000,
+autoplay: 3000,
+centeredSlides: true,
+slidesPerView: 5,
+spaceBetween: 0,
+pagination: '.swiper-pagination',
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+breakpoints: {
+767: {
+slidesPerView: 2,
+spaceBetween: 0
+}
+}
+})
+</script>
+<!--コンテンツswiper-->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous">
+</script>
+</body>
+
+</html>
