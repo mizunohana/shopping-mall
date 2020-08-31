@@ -624,8 +624,12 @@ section.faq li:nth-child(2) {
           justify-content: center;
 }
 
-.include_box div.flex_box div {
+.include_box div.flex_box .flex_item {
   width: 20%;
+}
+
+.include_box div.flex_box .flex_item img {
+  width: 100%;
 }
 
 iframe {
