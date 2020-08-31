@@ -33,6 +33,10 @@ https://www.rakuten.ne.jp/gold/mizunohana/content/faq.html
 
 https://www.rakuten.ne.jp/gold/mizunohana/content/privacypolicy.html
 
+### プライバシーポリシー
+
+https://www.rakuten.ne.jp/gold/mizunohana/content/guide.html
+
 
 todo: 会社概要をhttps://www.rakuten.co.jp/haikanbuhin/info.htmlのようにいじりたい
 
@@ -43,6 +47,9 @@ https://master.rms.rakuten.co.jp/rms/mall/rsf/shop/vc
 https://master.rms.rakuten.co.jp/rms/mall/rsf/shop/vc
 キレイにする
 
+
+---
+iframeの設定をする。
 
 
 全体の数量の割合で、ネットの在庫を決めると、
