@@ -13,6 +13,13 @@
         margin-top: 30px;
         font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
     }
+
+    div.flex_box{
+        display: flex;
+        justify-content: center;
+
+        div{flex-basis: 20%;}
+    }
 }
 iframe{
     border:none;
