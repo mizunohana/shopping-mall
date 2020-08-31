@@ -625,9 +625,7 @@ section.faq li:nth-child(2) {
 }
 
 .include_box div.flex_box div {
-  -webkit-flex-basis: 20%;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%;
+  width: 20%;
 }
 
 iframe {
