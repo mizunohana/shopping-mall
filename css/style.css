@@ -622,6 +622,10 @@ section.faq li:nth-child(2) {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .include_box div.flex_box .flex_item {

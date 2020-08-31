@@ -17,6 +17,7 @@
     div.flex_box{
         display: flex;
         justify-content: center;
+        justify-content: space-between;
 
         .flex_item{width: 20%;
         img{width: 100%;}
