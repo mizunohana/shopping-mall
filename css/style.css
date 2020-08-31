@@ -595,7 +595,7 @@ section.faq li:nth-child(2) {
 
 .include_box {
   width: 700px;
-  height: 300px;
+  display: none;
 }
 
 .include_box h3 {
