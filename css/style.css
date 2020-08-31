@@ -595,26 +595,9 @@ section.faq li:nth-child(2) {
 
 .include_box {
   width: 700px;
-  display: none;
 }
 
 .include_box h3 {
-  font-size: 18px;
-  width: 100%;
-  font-weight: 900;
-  letter-spacing: 0;
-  padding-bottom: 5px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#40C2F0), to(#E85382));
-  background-image: -webkit-linear-gradient(left, #40C2F0 0%, #E85382 100%);
-  background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 15%;
-  margin-top: 30px;
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
-}
-
-.include_box_2 h3 {
   font-size: 18px;
   width: 100%;
   font-weight: 900;
