@@ -1,5 +1,7 @@
 .include_box {
     width: 700px;
+    margin:2% 0;
+
     h3 {
         font-size: 18px;
         width: 100%;
@@ -14,20 +16,50 @@
         font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
     }
 
-    div.flex_box{
+    div.flex_box {
         display: flex;
         justify-content: center;
         justify-content: space-between;
+        flex-wrap: wrap;
 
-        .flex_item{width: 18%;
-        img{width: 100%;}
+        .flex_item {
+            width: 18%;
+        }
+
+        .attention {
+            width: 48%;
+        }
+
+        img:hover {
+            box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+        }
+
+        .feature {
+            width: 32%;
+            margin-bottom: 3%;
+        
+        a{
+            font-size: 12px;
+            text-decoration: none;
+        }
+        }
+
+        .empty_item {
+            width: 32%;
         }
     }
-}
-iframe{
-    border:none;
-    width:100%;
-    height:100%;
-    padding:0;
-    margin:0;
+
+    img {
+        width: 100%;
+        border-radius: $border-radius;
     }
+
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
