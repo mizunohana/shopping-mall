@@ -55,6 +55,13 @@ a.qa_list:hover {
   color: #fff !important;
 }
 
+span.underline {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ffff66));
+  background: -webkit-linear-gradient(transparent 60%, #ffff66 60%);
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+  font-weight: 600;
+}
+
 section.showroom {
   margin: 0 2%;
 }

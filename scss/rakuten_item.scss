@@ -1,17 +1,125 @@
-span.underline {
-    background: linear-gradient(transparent 60%, #ffff66 60%);
-    font-weight: 600;
+span.catch_copy{
+  color: darkgray;
+  font-size: 90% !important;
+  display: block;
+}
+
+span.item_name{
+  display: block;
+      width: 100%;
+      font-weight: 900;
+      letter-spacing: 0;
+      padding-bottom: px;
+      background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100% 5%;
+padding-bottom:3%;
+      margin-top: 15px;
+       }
+
+span.item_name{
+  font-size: 20px !important;
+}
+span.item_desc{
+  font-size: 14px;
+}
+
+/*必要なもの*/
+section.item_attention{
+font-size: 14px;
+margin: 5% 0;
+}
+.item_list a {
+  margin: 2% 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+  text-decoration: none;
+  color: rgb(49, 170, 226);
+  line-height: 2;
+  font-size: 14px;
+}
+
+.item_list a:hover {
+    padding: 0 10px;
+    background-position: -100% 0;
+    color: #fff;
   }
-  
-  span.catch_copy{
-    color: darkgray;
-    font-size: 90% !important;
-    display: block;
+
+
+  section.item_attention h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2% 0;
+}
+
+section.item_attention ul.attention{
+padding-left: 20px;
+}
+
+ul.attention li {
+  line-height: 2;
+  list-style-image: url(https://www.rakuten.ne.jp/gold/mizunohana/img/common/li_flower.png);
+  /*text-indent: -1.6rem;*/
+}
+
+
+.include_box {
+  width: 690px;
+  margin:2% 0;
+
+  h3 {
+      font-size: 18px;
+      width: 100%;
+      font-weight: 900;
+      letter-spacing: 0;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100% 15%;
+      margin-top: 30px;
+      font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
   }
-  
-  span.item_name{
-    font-size: 115% !important;
+
+  div.flex_box {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .flex_item {
+          width: 18%;
+      }
+
+      .attention {
+          width: 48%;
+      }
+
+      img:hover {
+          box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+      }
+
+      .feature {
+          width: 32%;
+          margin-bottom: 3%;
+      
+      a{
+          font-size: 12px;
+          text-decoration: none;
+      }
+      }
+
+      .empty_item {
+          width: 32%;
+      }
   }
-  span.item_desc{
-    font-size: 14px;
+
+  img {
+      width: 100%;
+      border-radius: 10px;
   }
+
+}

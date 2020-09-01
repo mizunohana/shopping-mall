@@ -1,10 +1,4 @@
-span.underline {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ffff66));
-  background: -webkit-linear-gradient(transparent 60%, #ffff66 60%);
-  background: linear-gradient(transparent 60%, #ffff66 60%);
-  font-weight: 600;
-}
-
+@charset "UTF-8";
 span.catch_copy {
   color: darkgray;
   font-size: 90% !important;
@@ -12,10 +6,140 @@ span.catch_copy {
 }
 
 span.item_name {
-  font-size: 115% !important;
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  letter-spacing: 0;
+  padding-bottom: px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#40C2F0), to(#E85382));
+  background-image: -webkit-linear-gradient(left, #40C2F0 0%, #E85382 100%);
+  background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 5%;
+  padding-bottom: 3%;
+  margin-top: 15px;
+}
+
+span.item_name {
+  font-size: 20px !important;
 }
 
 span.item_desc {
   font-size: 14px;
+}
+
+/*必要なもの*/
+section.item_attention {
+  font-size: 14px;
+  margin: 5% 0;
+}
+
+.item_list a {
+  margin: 2% 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none;
+  color: #31aae2;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.item_list a:hover {
+  padding: 0 10px;
+  background-position: -100% 0;
+  color: #fff;
+}
+
+section.item_attention h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2% 0;
+}
+
+section.item_attention ul.attention {
+  padding-left: 20px;
+}
+
+ul.attention li {
+  line-height: 2;
+  list-style-image: url(https://www.rakuten.ne.jp/gold/mizunohana/img/common/li_flower.png);
+  /*text-indent: -1.6rem;*/
+}
+
+.include_box {
+  width: 690px;
+  margin: 2% 0;
+}
+
+.include_box h3 {
+  font-size: 18px;
+  width: 100%;
+  font-weight: 900;
+  letter-spacing: 0;
+  padding-bottom: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#40C2F0), to(#E85382));
+  background-image: -webkit-linear-gradient(left, #40C2F0 0%, #E85382 100%);
+  background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 15%;
+  margin-top: 30px;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
+}
+
+.include_box div.flex_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.include_box div.flex_box .flex_item {
+  width: 18%;
+}
+
+.include_box div.flex_box .attention {
+  width: 48%;
+}
+
+.include_box div.flex_box img:hover {
+  -webkit-box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+          box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+}
+
+.include_box div.flex_box .feature {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+.include_box div.flex_box .feature a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.include_box div.flex_box .empty_item {
+  width: 32%;
+}
+
+.include_box img {
+  width: 100%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=rakuten_item.css.map */
