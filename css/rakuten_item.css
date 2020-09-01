@@ -10,7 +10,6 @@ span.item_name {
   width: 100%;
   font-weight: 900;
   letter-spacing: 0;
-  padding-bottom: px;
   background-image: -webkit-gradient(linear, left top, right top, from(#40C2F0), to(#E85382));
   background-image: -webkit-linear-gradient(left, #40C2F0 0%, #E85382 100%);
   background-image: linear-gradient(to right, #40C2F0 0%, #E85382 100%);
@@ -35,25 +34,12 @@ section.item_attention {
   margin: 5% 0;
 }
 
-.item_list a {
-  margin: 2% 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #31aae2));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #31aae2 50%);
-  background-position: 0 0;
-  background-size: 200% auto;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-decoration: none;
-  color: #31aae2;
-  line-height: 2;
-  font-size: 14px;
+.item_list li {
+  list-style: none;
 }
 
-.item_list a:hover {
-  padding: 0 10px;
-  background-position: -100% 0;
-  color: #fff;
+ul.item_list {
+  padding-left: -40px !important;
 }
 
 section.item_attention h3 {
@@ -63,12 +49,12 @@ section.item_attention h3 {
 }
 
 section.item_attention ul.attention {
-  padding-left: 20px;
+  padding-left: -40px;
 }
 
 ul.attention li {
   line-height: 2;
-  list-style-image: url(https://www.rakuten.ne.jp/gold/mizunohana/img/common/li_flower.png);
+  list-style-image: url(https://www.rakuten.ne.jp/gold/mizunohana/img/common/li_flower.jpg);
   /*text-indent: -1.6rem;*/
 }
 
