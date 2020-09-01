@@ -1,0 +1,21 @@
+span.underline {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ffff66));
+  background: -webkit-linear-gradient(transparent 60%, #ffff66 60%);
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+  font-weight: 600;
+}
+
+span.catch_copy {
+  color: darkgray;
+  font-size: 90% !important;
+  display: block;
+}
+
+span.item_name {
+  font-size: 115% !important;
+}
+
+span.item_desc {
+  font-size: 14px;
+}
+/*# sourceMappingURL=rakuten_item.css.map */
