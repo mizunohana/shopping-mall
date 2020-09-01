@@ -56,6 +56,19 @@ span.underline {
   font-weight: 600;
 }
 
+span.catch_copy{
+  color: darkgray;
+  font-size: 90% !important;
+  display: block;
+}
+
+span.item_name{
+  font-size: 115% !important;
+}
+span.item_desc{
+  font-size: 14px;
+}
+
 @import "content/showroom";
 @import "content/rule";
 @import "content/oteire";
