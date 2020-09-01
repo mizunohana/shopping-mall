@@ -595,6 +595,7 @@ section.faq li:nth-child(2) {
 
 .include_box {
   width: 700px;
+  margin: 2% 0;
 }
 
 .include_box h3 {
@@ -626,14 +627,41 @@ section.faq li:nth-child(2) {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .include_box div.flex_box .flex_item {
   width: 18%;
 }
 
-.include_box div.flex_box .flex_item img {
+.include_box div.flex_box .attention {
+  width: 48%;
+}
+
+.include_box div.flex_box img:hover {
+  -webkit-box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+          box-shadow: 0 0 20px 0 rgba(97, 194, 250, 0.6);
+}
+
+.include_box div.flex_box .feature {
+  width: 32%;
+  margin-bottom: 3%;
+}
+
+.include_box div.flex_box .feature a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.include_box div.flex_box .empty_item {
+  width: 32%;
+}
+
+.include_box img {
   width: 100%;
+  border-radius: 10px;
 }
 
 iframe {
